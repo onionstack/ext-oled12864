@@ -1,0 +1,55 @@
+{
+	"name": {
+		"zh-cn": "Obloq通信模块",
+		"en": "Obloq"
+	},
+	"description": {
+		"zh-cn": "将Wi-Fi连接添加到micro：bit，并在5分钟内启动您的IoT项目！",
+		"en": "Add Wi-Fi connectivity to micro:bit and start your IoT project in 5 minutes!"
+	},
+	"auther": "dfrobot",
+	"email": "",
+	"license": "MIT",
+	"isTest": true,
+	"isBoard": false,
+	"id": "xxx",
+	"platform": ["win", "mac", "web"],
+	"asset": {
+		"arduinoC": {
+			"dir": "arduinoC/",
+			"version": "0.0.1",
+			"board": ["microbit", "leonardo", "arduino"],
+			"main": "main.ts",
+			"files": [
+				"_menus/microbit.json",
+				"_menus/leonardo.json",
+				"_locales/zh-cn.json",
+				"_images/icon.svg",
+				"libraries/DFRobot_DHT/DFRobot_DHT.cpp",
+				"libraries/DFRobot_DHT/DFRobot_DHT.h"
+			]
+		},
+		"micropython": {
+			"dir": "micropython/",
+			"version": "0.0.1",
+			"board": ["microbit"],
+			"main": "main.ts",
+			"files": [
+				"_menus/microbit.json",
+				"_locales/zh-cn.json",
+				"_images/icon.svg"
+			]
+		},
+		"javascript": {
+			"dir": "javascript/",
+			"version": "0.0.1",
+			"board": ["microbit"],
+			"main": "main.ts",
+			"files": [
+				"_menus/microbit.json",
+				"_locales/zh-cn.json",
+				"_images/icon.svg"
+			]
+		}
+	}
+}
