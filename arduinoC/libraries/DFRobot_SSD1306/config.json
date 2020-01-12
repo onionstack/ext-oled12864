@@ -1,0 +1,11 @@
+{
+	"uno": true,
+	"nano": true,
+	"mpython": true,
+	"microbit": true,
+	"leonardo": true,
+	"mega2560": true,
+	"beetleProMini": false,
+	"version": "V1.6.2",
+	"include": "DFRobot_SSD1306_I2C.h"
+}
