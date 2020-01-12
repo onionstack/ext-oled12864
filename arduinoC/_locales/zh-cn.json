@@ -1,13 +1,7 @@
 {
-	"xxx.buttonPress|block": "当 [BUTTON] 按钮按下",
-	"xxx.setBrightness|block": "RGB灯 设置引脚 [PIN] 灯带亮度为 [LIGHT]",
-	"xxx.isConnected|block": "接口 [PIN] 被接通？",
-	"xxx.notTrue|block": "非 [Flag]",
-	"xxx.readserialIntfloat|block": "从串口读一个 [READTYPE]",
-	"xxx.setWirelessChannel|block": "设置无线频道为 [NUM]",
-	"xxx.printStr|block": "打印 [STR]",
-	"xxx.TYPE.INT|menu": "整数",
-	"xxx.ALLPIN.P0|menu": "引脚0",
-	"xxx.ALLPIN.P1|menu": "引脚1",
-	"xxx.ALLPIN.P2|menu": "引脚2"
+    "oled12864.qrcode|block": "在坐标x [X] y [Y] 绘制二维码[STR] 尺寸 [SIZE]",
+    "oled12864.println|block": "在第 [LINE] 显示 [STR]",
+    "oled12864.print|block": "在坐标x [X] y [Y] 显示 [STR]",
+    "oled12864.SIZE.1|menu": "29*29",
+    "oled12864.SIZE.2|menu": "58*58"
 }
