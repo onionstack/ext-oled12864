@@ -26,7 +26,7 @@ IIC: the redraw rate is more than 30 frames per second when redrawed by ESP seri
 ![image](https://github.com/onionstack/ext.oled12864/blob/master/arduinoC/_images/blocks.png)
 
 
-Get the iot of things platform: [East IoT](http://iot.dfrobot.com.cn/).
+Get a purchase connection: [store](https://www.dfrobot.com.cn/index.php).
 
 ## License
 
