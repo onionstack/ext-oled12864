@@ -1,5 +1,5 @@
 # OLED
-<img src="https://ws.dfrobot.com.cn/Fi26a6VBXhMdFSPCMfIgbiRLE7l3" width="350" height="200" align=center>
+<img src="https://ws.dfrobot.com.cn/Fi26a6VBXhMdFSPCMfIgbiRLE7l3" width="250" height="200" align=center>
 
 ---------------------------------------------------------
 
