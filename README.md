@@ -12,7 +12,7 @@ I2C OLED-2864 screen
 * [Summary](#summary)
 * [Blocks](#blocks)
 * [License](#license)
-* [Supported targets](#SupportedTargets)
+* [Supported targets](#Supportedtargets)
 
 ## URL
 project URL: ```https://github.com/onionstack/ext.oled12864```
@@ -35,10 +35,7 @@ MIT
 
 ## Supported targets
 
-MCU                | Work Well    | Work Wrong   | Untested    | Remarks
+MCU                | JavaScript    | Arduino   | MicroPython    | Remarks
 ------------------ | :----------: | :----------: | :---------: | -----
-Arduino uno        |      √       |              |             | 
-Mega2560        |      √       |              |             | 
-Leonardo        |      √       |              |             | 
-ESP32        |      √       |              |             | 
-micro:bit        |      √       |              |             | 
+micro:bit        |             |       √       |             | 
+mpython        |             |        √      |             | 
