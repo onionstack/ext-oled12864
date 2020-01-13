@@ -1,7 +1,7 @@
 # OLED
 
 I2C OLED-2864 screen
-![image](https://ws.dfrobot.com.cn/Fi26a6VBXhMdFSPCMfIgbiRLE7l3)
+<img src="https://ws.dfrobot.com.cn/Fi26a6VBXhMdFSPCMfIgbiRLE7l3" width="100" height="100" align=center>
 ---------------------------------------------------------
 
 ## Table of Contents
