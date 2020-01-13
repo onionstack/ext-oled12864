@@ -35,10 +35,7 @@ MIT
 
 ## Supported targets
 
-MCU                | Work Well    | Work Wrong   | Untested    | Remarks
+MCU                | JavaScript    | Arduino   | Mpython    | Remarks
 ------------------ | :----------: | :----------: | :---------: | -----
-Arduino uno        |      √       |              |             | 
-Mega2560        |      √       |              |             | 
-Leonardo        |      √       |              |             | 
-ESP32        |      √       |              |             | 
-micro:bit        |      √       |              |             | 
+micro:bit        |             |       √       |             | 
+mpython        |             |        √      |             | 
