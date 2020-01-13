@@ -4,8 +4,8 @@
 		"en": "OLED-12864 screen"
 	},
 	"description": {
-		"zh-cn": "",
-		"en": ""
+		"zh-cn": "小体积显示屏，可用于智能穿戴设备的显示器",
+		"en": "I2C OLED-2864 Display Module"
 	},
 	"auther": "dfrobot",
 	"email": "1035868977@qq.com",
