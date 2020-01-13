@@ -2,7 +2,7 @@
 
 I2C OLED-2864 screen
 
-<img src="https://github.com/onionstack/ext.oled12864/blob/master/arduinoC/_images/featured.png" width="550" height="300" align=center>
+<img src="https://github.com/onionstack/ext.oled12864/blob/master/arduinoC/_images/featured.png" width="450" height="300" align=center>
 
 ---------------------------------------------------------
 
