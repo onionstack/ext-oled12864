@@ -25,6 +25,10 @@ public:
 
     void qrcode(uint32_t x, uint32_t y, const String& str, uint8_t scale=2);
 
+    void setLineWidth(uint32_t w = 1);
+
+    void getLineWidth();
+
 protected:
 
 private:

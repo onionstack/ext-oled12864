@@ -10,7 +10,7 @@
 	"auther": "dfrobot",
 	"email": "1035868977@qq.com",
 	"license": "MIT",
-	"isTest": false,
+	"isTest": true,
 	"isBoard": false,
 	"id": "oled12864",
 	"platform": ["win", "mac", "web"],

@@ -38,6 +38,16 @@ void OLED_12864::qrcode(uint32_t x, uint32_t y, const String& str, uint8_t scale
     lineWidth(_brushWidth);
 }
 
+void OLED_12864::setLineWidth(uint32_t w = 1)
+{
+    lineWidth(w);
+}
+
+void OLED_12864::getLineWidth()
+{
+    return brushWidth;
+}
+
 void OLED_12864::rect(int32_t x, int32_t y, int32_t width, int32_t height, bool fill)
 {
     int backspace = brushWidth/2 + brushWidth%2 - 1;
