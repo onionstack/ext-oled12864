@@ -12,7 +12,7 @@ I2C OLED-2864 screen
 * [Summary](#summary)
 * [Blocks](#blocks)
 * [License](#license)
-* [Supported targets](#Supported targets)
+* [Supported targets](#Supportedtargets)
 
 ## URL
 project URL: ```https://github.com/onionstack/ext.oled12864```
