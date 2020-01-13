@@ -1,4 +1,8 @@
-# OLED <img src="https://ws.dfrobot.com.cn/Fi26a6VBXhMdFSPCMfIgbiRLE7l3" width="250" height="200" align=center>
+# OLED
+
+I2C OLED-2864 screen
+
+<img src="https://github.com/onionstack/ext.oled12864/blob/master/arduinoC/_images/featured.png" width="300" height="300" align=center>
 
 ---------------------------------------------------------
 
