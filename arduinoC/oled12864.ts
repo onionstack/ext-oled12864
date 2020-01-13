@@ -102,7 +102,7 @@ namespace oled12864 {
         generator.addInclude('oled12864', '#include <oled12864.h>');
         generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
         generator.addSetup(`myoled.begin`, `myoled.begin();`);
-        generator.addCode(`myoled.getLineWidth();`);
+        generator.addCode(`myoled.getLineWidth()`);
     }
 
     //% block="button [BUTTON] is pressed?" blockType="boolean"
