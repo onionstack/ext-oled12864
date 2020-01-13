@@ -1,4 +1,4 @@
-# Obloq
+# OLED
 
 I2C OLED-2864 screen
 ![image](https://ws.dfrobot.com.cn/Fi26a6VBXhMdFSPCMfIgbiRLE7l3)
@@ -9,7 +9,6 @@ I2C OLED-2864 screen
 * [URL](#url)
 * [Summary](#summary)
 * [Blocks](#blocks)
-* [Example](#example)
 * [License](#license)
 
 ## URL
