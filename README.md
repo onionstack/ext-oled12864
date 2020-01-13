@@ -2,7 +2,7 @@
 
 I2C OLED-2864 screen
 
-<img src="https://github.com/onionstack/ext.oled12864/blob/master/arduinoC/_images/featured.png" width="300" height="300" align=center>
+<img src="https://github.com/onionstack/ext.oled12864/blob/master/arduinoC/_images/featured.png" width="550" height="300" align=center>
 
 ---------------------------------------------------------
 
@@ -23,21 +23,8 @@ IIC: the redraw rate is more than 30 frames per second when redrawed by ESP seri
 
 ## Blocks
 
-### MQTT
-![image](https://github.com/DFRobot/pxt-Obloq/blob/master/image/MQTT.png)
+![image](https://github.com/onionstack/ext.oled12864/blob/master/arduinoC/_images/blocks.png)
 
-
-## Example
-
-### MQTT
-![image](https://github.com/DFRobot/pxt-Obloq/blob/master/image/MQTTDemo.png)
-
-get code: ```https://github.com/DFRobot/pxt-Obloq/blob/master/mqtttest.ts```
-
-Multiple services：
-![image](https://github.com/DFRobot/pxt-Obloq/blob/master/image/MQTTMoreDemo.png)
-
-get code: ```https://github.com/DFRobot/pxt-Obloq/blob/master/mqttMoretest.ts```
 
 Get the iot of things platform: [East IoT](http://iot.dfrobot.com.cn/).
 
