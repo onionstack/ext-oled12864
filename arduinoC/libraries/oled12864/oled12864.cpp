@@ -38,12 +38,12 @@ void OLED_12864::qrcode(uint32_t x, uint32_t y, const String& str, uint8_t scale
     lineWidth(_brushWidth);
 }
 
-void OLED_12864::setLineWidth(uint32_t w = 1)
+void OLED_12864::setLineWidth(uint32_t w)
 {
     lineWidth(w);
 }
 
-void OLED_12864::getLineWidth()
+uint32_t OLED_12864::getLineWidth()
 {
     return brushWidth;
 }

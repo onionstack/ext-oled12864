@@ -27,7 +27,7 @@ public:
 
     void setLineWidth(uint32_t w = 1);
 
-    void getLineWidth();
+    uint32_t getLineWidth();
 
 protected:
 
