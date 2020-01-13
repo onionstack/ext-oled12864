@@ -12,6 +12,7 @@ I2C OLED-2864 screen
 * [Summary](#summary)
 * [Blocks](#blocks)
 * [License](#license)
+* [Supported targets](#SupportedTargets)
 
 ## URL
 project URL: ```https://github.com/onionstack/ext.oled12864```
@@ -31,3 +32,13 @@ Get a purchase connection: [store](https://www.dfrobot.com.cn/index.php).
 ## License
 
 MIT
+
+## Supported targets
+
+MCU                | Work Well    | Work Wrong   | Untested    | Remarks
+------------------ | :----------: | :----------: | :---------: | -----
+Arduino uno        |      √       |              |             | 
+Mega2560        |      √       |              |             | 
+Leonardo        |      √       |              |             | 
+ESP32        |      √       |              |             | 
+micro:bit        |      √       |              |             | 
