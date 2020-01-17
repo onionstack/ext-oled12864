@@ -32,16 +32,17 @@ namespace oled12864 {
     //% block="when press [BUTTON]" blockType="hat"
     //% BUTTON.shadow="dropdown" BUTTON.options="BTN" BUTTON.defl="BTN.A"
     export function buttonPress(parameter: any, block: any) {
-        let button = parameter.BUTTON.code.replace("+", "");
+        let button = parameter.BUTTON.code;
+        button = replace(button);
         let name = 'button' + button + 'PressCallback';
-        if(this.board === 'microbit'){
-            generator.addEvent(name, "void", name, "", true);
-            generator.addSetup(block.id, `onEvent(ID_BUTTON_${button}, PRESS, ${name});`, false);
+        if(Generator.board === 'microbit'){
+            Generator.addEvent(name, "void", name, "", true);
+            Generator.addSetup(block.id, `onEvent(ID_BUTTON_${button}, PRESS, ${name});`, false);
         }else{
-            generator.addInclude('MPython', '#include <MPython.h>');
-            generator.addEvent(name, "void", name, "", true);
-            generator.addSetupMainTop("mPython.begin", "mPython.begin();");
-            generator.addSetup(`button${button}.setPressedCallback`, `button${button}.setPressedCallback(${name});`);
+            Generator.addInclude('MPython', '#include <MPython.h>');
+            Generator.addEvent(name, "void", name, "", true);
+            Generator.addSetupMainTop("mPython.begin", "mPython.begin();");
+            Generator.addSetup(`button${button}.setPressedCallback`, `button${button}.setPressedCallback(${name});`);
         }
     }
 
@@ -51,10 +52,10 @@ namespace oled12864 {
     export function println(parameter: any, block: any) {
         let str = parameter.STR.code
         let line = parameter.LINE.code
-        generator.addInclude('oled12864', '#include <oled12864.h>');
-        generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
-        generator.addSetup(`myoled.begin`, `myoled.begin();`);
-        generator.addCode(`myoled.setCursorLine(${line});\n\tmyoled.printLine(${str});`);
+        Generator.addInclude('oled12864', '#include <oled12864.h>');
+        Generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
+        Generator.addSetup(`myoled.begin`, `myoled.begin();`);
+        Generator.addCode(`myoled.setCursorLine(${line});\n\tmyoled.printLine(${str});`);
     }
 
     //% block="show [STR] at x [X] y [Y]" blockType="command"
@@ -65,10 +66,10 @@ namespace oled12864 {
         let str = parameter.STR.code
         let x = parameter.X.code
         let y = parameter.Y.code
-        generator.addInclude('oled12864', '#include <oled12864.h>');
-        generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
-        generator.addSetup(`myoled.begin`, `myoled.begin();`);
-        generator.addCode(`myoled.setCursor(${x}, ${y});\n\tmyoled.print(${str});`);
+        Generator.addInclude('oled12864', '#include <oled12864.h>');
+        Generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
+        Generator.addSetup(`myoled.begin`, `myoled.begin();`);
+        Generator.addCode(`myoled.setCursor(${x}, ${y});\n\tmyoled.print(${str});`);
     }
 
     //% block="display QR code [STR] at x [X] y [Y] with size [SIZE]" blockType="command"
@@ -81,28 +82,28 @@ namespace oled12864 {
         let x = parameter.X.code
         let y = parameter.Y.code
         let size = parameter.SIZE.code
-        generator.addInclude('oled12864', '#include <oled12864.h>');
-        generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
-        generator.addSetup(`myoled.begin`, `myoled.begin();`);
-        generator.addCode(`myoled.qrcode(${x}, ${y}, ${str}, ${size});`);
+        Generator.addInclude('oled12864', '#include <oled12864.h>');
+        Generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
+        Generator.addSetup(`myoled.begin`, `myoled.begin();`);
+        Generator.addCode(`myoled.qrcode(${x}, ${y}, ${str}, ${size});`);
     }
 
     //% block="set the line width to [WIDTH] pixels" blockType="command"
     //% WIDTH.shadow="range" WIDTH.params.min=1 WIDTH.params.max=128 WIDTH.defl=1
     export function setLineWidth(parameter: any, block: any) {
         let width = parameter.WIDTH.code
-        generator.addInclude('oled12864', '#include <oled12864.h>');
-        generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
-        generator.addSetup(`myoled.begin`, `myoled.begin();`);
-        generator.addCode(`myoled.setLineWidth(${width});`);
+        Generator.addInclude('oled12864', '#include <oled12864.h>');
+        Generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
+        Generator.addSetup(`myoled.begin`, `myoled.begin();`);
+        Generator.addCode(`myoled.setLineWidth(${width});`);
     }
 
     //% block="get the line width" blockType="reporter"
     export function getLineWidth(parameter: any, block: any) {
-        generator.addInclude('oled12864', '#include <oled12864.h>');
-        generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
-        generator.addSetup(`myoled.begin`, `myoled.begin();`);
-        generator.addCode(`myoled.getLineWidth()`);
+        Generator.addInclude('oled12864', '#include <oled12864.h>');
+        Generator.addObject(`myoled`, `OLED_12864`, `myoled;`);
+        Generator.addSetup(`myoled.begin`, `myoled.begin();`);
+        Generator.addCode(`myoled.getLineWidth()`);
     }
 
     //% block="button [BUTTON] is pressed?" blockType="boolean"
@@ -111,7 +112,7 @@ namespace oled12864 {
     export function buttonIsPressed(parameter: any, block: any) {
         let button = parameter.BUTTON.code.replace("+", "");
         let code;
-        if(this.board === 'microbit'){
+        if(Generator.board === 'microbit'){
             if (button === 'A') {
                 code = `Button_A.isPressed() && !Button_B.isPressed()`;
             } else if (button === 'B') {
@@ -119,12 +120,12 @@ namespace oled12864 {
             } else {
                 code = `Button_AB.isPressed()`;
             }
-            generator.addCode([code, this.ORDER_UNARY_POSTFIX]);
+            Generator.addCode([code, Generator.ORDER_UNARY_POSTFIX]);
         }else{
             code = `button${button}.isPressed()`;
-            generator.addInclude('MPython', '#include <MPython.h>');
-            generator.addSetupMainTop("mPython.begin", "mPython.begin();");
-            generator.addCode([code, this.ORDER_UNARY_POSTFIX]);
+            Generator.addInclude('MPython', '#include <MPython.h>');
+            Generator.addSetupMainTop("mPython.begin", "mPython.begin();");
+            Generator.addCode([code, Generator.ORDER_UNARY_POSTFIX]);
         }
     }
 
@@ -133,6 +134,10 @@ namespace oled12864 {
     export function notTrue(parameter: any) {
         console.log("notTrue==", parameter);
         let code: string = '!' + (parameter.Flag.code || 'false') + '';
-        generator.addCode([code, generator.ORDER_UNARY_PREFIX]);
+        Generator.addCode([code, Generator.ORDER_UNARY_POSTFIX]);
+    }
+
+    function replace(str :string) {
+        return str.replace("+", "");
     }
 }
