@@ -15,7 +15,7 @@ I2C OLED-2864 screen
 * [Supported targets](#Supportedtargets)
 
 ## URL
-project URL: ```https://github.com/onionstack/ext.oled12864```
+project URL: ```https://github.com/onionstack/ext-oled12864```
 
 ## Summary
 Support different drawings in the screen, including point, line, circle, rectangle, triangle,rounded rectangle and some commands.
